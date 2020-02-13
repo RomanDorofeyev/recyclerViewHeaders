@@ -33,7 +33,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.infeed_list_item, parent, false);
             return new SimpleViewHolder(view);
         } else {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.motion_ad_layout, parent, false);
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ad_item_layout, parent, false);
             return new AdViewHolder(view);
         }
 
@@ -62,10 +62,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     public static class AdViewHolder extends RecyclerView.ViewHolder {
-        MotionLayout motionLayout;
+        ViewGroup motionLayout;
         public AdViewHolder(View view) {
             super(view);
-            motionLayout = (MotionLayout) view;
+            motionLayout = (ViewGroup) view;
         }
     }
 }

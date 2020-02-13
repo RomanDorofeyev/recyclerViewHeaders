@@ -33,20 +33,19 @@ public class MainActivity extends AppCompatActivity {
                                                               LinearLayoutManager.VERTICAL,
                                                               false));
 
-//
+
 //        RecyclerAdItemDecoration sectionItemDecoration =
 //            new RecyclerAdItemDecoration(getResources().getDimensionPixelSize(R.dimen.recycler_section_header_height),
 //                                              true, getAdPositionsList());
 //        recyclerView.addItemDecoration(sectionItemDecoration);
 
         recyclerView.setAdapter(new RecyclerViewAdapter(RECYCLE_VIEW_SIZE, AD_POSITION));
-        recyclerView.addOnScrollListener(new InfeedMotionScrollListener(AD_POSITION));
-
+        recyclerView.addOnScrollListener(new InfeedMotionScrollListener(AD_POSITION, getResources().getInteger(R.integer.transition_animation_duration)));
 
 //        setFrame();
     }
 
-    private List<Integer> getAdPositionsList(){
+    public static List<Integer> getAdPositionsList(){
         List<Integer> adPositions = new ArrayList<>();
         adPositions.add(8);
 //        adPositions.add(20);

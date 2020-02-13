@@ -25,7 +25,7 @@
         <Constraint
             android:id="@+id/ad_content"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="@dimen/ad_content_height"
             android:background="@drawable/box"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/ad_content" >
+            motion:layout_constraintBottom_toBottomOf="parent">
 
         </Constraint>
 
@@ -48,6 +48,25 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/ad_content"
             android:layout_marginTop="15dp"/>
+
+        <Constraint
+            android:id="@+id/sponsored_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible" />
+
+        <Constraint
+            android:id="@+id/learn_more_btn_collapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/sponsored_text"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible" />
 
     </ConstraintSet>
 
@@ -64,8 +83,8 @@
 
         <Constraint
             android:id="@+id/ad_content"
-            android:layout_width="217dp"
-            android:layout_height="130dp"
+            android:layout_width="@dimen/collapsed_ad_content_width"
+            android:layout_height="@dimen/collapsed_ad_content_height"
             android:background="@drawable/box"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"/>
@@ -74,18 +93,38 @@
             android:id="@+id/advertisement_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent" />
+            android:layout_marginTop="25dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"/>
 
         <Constraint
             android:id="@+id/learn_more_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/ad_content"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"/>
+
+        <Constraint
+            android:id="@+id/sponsored_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible" />
+
+        <Constraint
+            android:id="@+id/learn_more_btn_collapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="5dp"
+            motion:layout_constraintBottom_toBottomOf="@id/ad_content"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintBottom_toBottomOf="@id/ad_content" />
+            android:visibility="visible" />
 
     </ConstraintSet>
 

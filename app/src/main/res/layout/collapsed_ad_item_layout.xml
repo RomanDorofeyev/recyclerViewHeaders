@@ -49,8 +49,6 @@
             android:paddingBottom="8dp"
             android:text="Learn more"
             android:textColor="@color/whiteColor"
-            android:textSize="14sp"
-
-            />
+            android:textSize="14sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
