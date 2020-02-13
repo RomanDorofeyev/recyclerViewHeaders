@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recycler_section_header_height"
+    android:animateLayoutChanges="true"
+    android:background="@color/recyclerAdBackground"
+    android:paddingStart="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <View
+        android:id="@+id/ad_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/advertisement_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Advertisement"
+        android:textColor="@color/whiteColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_content" />
+
+    <TextView
+        android:id="@+id/learn_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/box_without_background"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:text="Learn more"
+        android:textColor="@color/whiteColor"
+        android:textSize="14sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

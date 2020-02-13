@@ -3,4 +3,12 @@
   <color name="colorPrimary">#3F51B5</color>
   <color name="colorPrimaryDark">#303F9F</color>
   <color name="colorAccent">#FF4081</color>
+  <color name="recyclerViewSimpleItemBackground">#19C5C3C3</color>
+  <color name="recyclerAdBackground">#9B9898</color>
+  <color name="recyclerCollapsedAdBackground">#4D4A4A</color>
+  <color name="boxColor">#DEDFE0</color>
+  <color name="lineColor">#DEDFE0</color>
+  <color name="boldLineColor">#D5D5D5</color>
+  <color name="whiteColor">#ffffff</color>
+
 </resources>

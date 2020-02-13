@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainMotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recycler_section_header_height"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/ad_layout_background_transition"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        app:layoutDescription="@xml/ad_motion_scene">
+
+        <View
+            android:id="@+id/ad_content"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/box" />
+
+            <TextView
+                android:id="@+id/advertisement_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Advertisement"
+                android:textColor="@color/whiteColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/learn_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_without_background"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="Learn more"
+                android:textColor="@color/whiteColor"
+                android:textSize="14sp" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
