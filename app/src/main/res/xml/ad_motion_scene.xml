@@ -5,7 +5,7 @@
     <Transition
         motion:constraintSetStart="@id/motion_start"
         motion:constraintSetEnd="@id/motion_end"
-        motion:duration="@integer/transition_animation_duration">
+        motion:duration="500">
 <!--        <OnSwipe motion:dragDirection="dragUp" />-->
         <OnClick motion:clickAction="toggle"/>
     </Transition>
@@ -25,7 +25,7 @@
         <Constraint
             android:id="@+id/ad_content"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/ad_content_height"
+            android:layout_height="@dimen/expanded_ad_content_height"
             android:background="@drawable/box"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"

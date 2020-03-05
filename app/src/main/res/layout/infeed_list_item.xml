@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:padding="5dp"
     android:layout_marginBottom="3dp"
@@ -10,10 +11,20 @@
     android:background="@color/recyclerViewSimpleItemBackground">
 
 
-    <View
+    <LinearLayout
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/box"/>
+        android:background="@drawable/box"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            tool:text="1"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout1"

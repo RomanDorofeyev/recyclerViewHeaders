@@ -25,13 +25,14 @@ public class RecyclerAdItemDecoration extends RecyclerView.ItemDecoration {
     private int headerOffset;
     private final boolean sticky;
     private List<Integer> adPositions;
+    private ViewGroup adView;
 
-    private ConstraintLayout adView;
 
-    public RecyclerAdItemDecoration(int headerHeight, boolean sticky, List<Integer> adPositions) {
-        headerOffset = headerHeight;
+    public RecyclerAdItemDecoration(int headerHeight, boolean sticky, List<Integer> adPositions, ViewGroup adView) {
+        headerOffset = adView.getHeight();
         this.sticky = sticky;
         this.adPositions = adPositions;
+        this.adView = adView;
 
     }
 
@@ -51,8 +52,8 @@ public class RecyclerAdItemDecoration extends RecyclerView.ItemDecoration {
                          parent,
                          state);
 
-        if (adView == null) {
-            adView = inflateAdView(parent);
+        if (adView != null) {
+//            adView = inflateAdView(parent);
             fixLayoutSize(adView, parent);
         }
 

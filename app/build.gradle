@@ -29,4 +29,6 @@ dependencies {
 
   implementation 'androidx.recyclerview:recyclerview:1.1.0'
   implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+
+  implementation 'com.brandio.ads:sdk:4.1.0'
 }
